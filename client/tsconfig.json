@@ -1,0 +1,25 @@
+{
+    "compilerOptions": {
+      "target": "es5",
+      "lib": ["dom", "dom.iterable", "esnext"],
+      "allowJs": true,            // Allows JavaScript files to be compiled
+      "skipLibCheck": true,
+      "esModuleInterop": true,
+      "allowSyntheticDefaultImports": true,
+      "strict": false,            // Start with false, enable later
+      "forceConsistentCasingInFileNames": true,
+      "noFallthroughCasesInSwitch": true,
+      "module": "esnext",
+      "moduleResolution": "node",
+      "resolveJsonModule": true,
+      "isolatedModules": true,
+      "noEmit": true,
+      "jsx": "react-jsx",
+      "baseUrl": "src",          // Enables absolute imports from src
+      "paths": {
+        "@/*": ["*"]             // Import from '@/components' instead of '../../components'
+      }
+    },
+    "include": ["src/**/*"],     // What files to compile
+    "exclude": ["node_modules"]   // What to ignore
+  }
